@@ -2,25 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta class="predictor" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Risk Calculator</title>
 </head>
 <body>
     <h1>Risk Calculator</h1>
-    <!-- <h3>Select all the symptoms you have and there severity from the list below:</h3>
-    <h4>Common Symptoms:</h4>
-    <input type="checkbox" name="symptom" value="Fever">Fever<br>
-    <input type="checkbox" name="symptom" value="Dry Cough">Dry Cough<br>
-    <input type="checkbox" name="symptom" value="Fatigue">Fatigue<br><br>
-    
-    <h4>Mild Symptoms:</h4>
-    <input type="checkbox" name="symptom" value="Loss of taste or smell">Loss of taste or smell<br>
-    <input type="checkbox" name="symptom" value="Nasal Congestion">Nasal Congestion<br>
-    <input type="checkbox" name="symptom" value="theSymptom5">theSymptom5<br>
-    <button>click:D</button> -->
 
-    <iframe id="checker-iframe" title="Coronavirus (COVID-19) Self-Checker" src="https://jhmcoronavirusselfchecker.azurewebsites.net/"></iframe>
+    <h4>What is your age?</h4>
+    <input type="number" class="predictor" name="age" value="age"><br>
+    <br><br>
+
+    <h4>What is your gender?</h4>
+    <div id="gender">
+        <input type="radio" class="predictor" name="gender" id="">Male<br>
+        <input type="radio" class="predictor" name="gender" id="">Female<br>
+        <input type="radio" class="predictor" name="gender" id="">Other<br>
+    </div>
+
+    <h3>Select all the symptoms you have and there severity from the list below:</h3>
+    <h4>Common Symptoms:</h4>
+    <input type="checkbox" class="predictor" name="c-sympt" value="Fever">Fever<br>
+    <input type="checkbox" class="predictor" name="c-sympt" value="Dry Cough">Dry Cough<br>
+    <input type="checkbox" class="predictor" name="c-sympt" value="Fatigue">Fatigue<br><br>
+    <input type="radio" class="predictor" name="c-sympt" value="None of the above">None of the above<br>
+
+    <h4>Mild Symptoms:</h4>
+    <input type="checkbox" class="predictor" name="m-sympt" value="Loss of taste or smell">Loss of taste or smell<br>
+    <input type="checkbox" class="predictor" name="m-sympt" value="Nasal Congestion">Nasal Congestion<br>
+    <input type="checkbox" class="predictor" name="m-sympt" value="Conjunctivitis">Conjunctivitis<br>
+    <input type="checkbox" class="predictor" name="m-sympt" value="Sore Throat">Sore Throat<br>
+    <input type="checkbox" class="predictor" name="m-sympt" value="Headache">Headache<br>
+    <input type="checkbox" class="predictor" name="m-sympt" value="Muscle or joint pain">Muscle or joint pain<br>
+    <input type="checkbox" class="predictor" name="m-sympt" value="Nausea/Vomiting">Nausea/Vomiting<br>
+    <input type="checkbox" class="predictor" name="m-sympt" value="Diarrhea">Diarrhea<br>
+    <input type="checkbox" class="predictor" name="m-sympt" value="Dizziness">Dizziness<br><br>
+    <input type="radio" class="predictor" name="m-sympt" value="None of the above">None of the above<br>
+
+    <h4>Severe Symptoms:</h4>
+    <input type="checkbox" class="predictor" name="s-sympt" value="Shortness of breath">Shortness of breath<br>
+    <input type="checkbox" class="predictor" name="s-sympt" value="Loss of appetite">Loss of appetite<br>
+    <input type="checkbox" class="predictor" name="s-sympt" value="Persistent pain in the chest">Persistent pain in the chest<br>
+    <input type="checkbox" class="predictor" name="s-sympt" value="High body temperature">High body temperature<br>
+    <input type="checkbox" class="predictor" name="s-sympt" value="Strokes">Strokes<br>
+    <input type="checkbox" class="predictor" name="s-sympt" value="Nerve Damage">Nerve Damage<br>
+    <input type="radio" class="predictor" name="s-sympt" value="None of the above">None of the above<br>
+    <br><br>
+
+    <h4>Do you have any of the following:</h4>
+    <input type="checkbox" class="predictor" name="other-prob" value="Asthama">Asthama<br>
+    <input type="checkbox" class="predictor" name="other-prob" value="Diabeties">Diabeties<br>
+    <input type="checkbox" class="predictor" name="other-prob" value="Blood Pressure">Blood Pressure<br>
+    <input type="checkbox" class="predictor" name="other-prob" value="Heart Disease">Heart Disease<br>
+    <input type="checkbox" class="predictor" name="other-prob" value="Kidney Disorder">Kidney Disorder<br>
+    <input type="checkbox" class="predictor" name="other-prob" value="Lung Disease">Lung Disease<br>
+    <input type="checkbox" class="predictor" name="other-prob" value="Hypertension">Hypertension<br>
+    <input type="radio" class="predictor" name="other-prob" value="None of the above">None of the above<br><br>
+    <br><br>
+
+    <h4>Do you think that you have come in contact with any Covid-19 positive patient?</h4>
+    <input type="radio" class="predictor" name="met-corona" value="Yes">Yes<br>
+    <input type="radio" class="predictor" name="met-corona" value="No">No<br>
+    <br><br>
+
+    <button>click:D</button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>

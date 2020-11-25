@@ -1,5 +1,7 @@
+var array = [];
+
 $('button').on('click', function() {
-    var array = [];
+    // var array = [];
     $("input:checked").each(function() {
         array.push($(this).val());
     });
@@ -8,4 +10,17 @@ $('button').on('click', function() {
     array.forEach(element => {
         console.log(element)
     });
+});
+
+$('input[class="predictor"]').on('change', function(){
+    if ($(this).attr('type') == 'radio' ) {
+        if ( $(this).prop('checked') ) {
+            $('input[class="predictor"][type="checkbox"]').prop('checked', false);
+        }
+    }
+    else {
+        if ( $(this).prop('checked') ) {
+            $('input[class="predictor"][type="radio"]').prop('checked', false);
+        }
+    }
 });
